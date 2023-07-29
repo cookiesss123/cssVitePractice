@@ -1,0 +1,22 @@
+
+.products img{
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
+}
+.products .title{
+  font-size: 20px;
+}
+
+// 電腦
+@include media-breakpoint-up(lg) {
+  .products img{
+    width: 255px;
+    height: 255px;
+
+  }
+  .products .title{
+    font-size: 24px;
+  }
+  
+}

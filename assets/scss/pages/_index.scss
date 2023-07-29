@@ -1,3 +1,58 @@
-.index-title {
-  font-size: 100px;
+@font-face {
+  font-family: 'SF-Pro-Text';
+  src:
+  url('../font/SF-Pro-Text-Regular.woff2') format('woff2'),
+  url('../font/SF-Pro-Text-Bold.woff2') format('woff2'),
+  url('../font/SF-Pro-Text-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'PingFang-TC';
+  src: url('../font/PingFangRegular.woff2') format('woff2');
+}
+
+.PingFangTC{
+  font-family: 'PingFang-TC'
+}
+.SFProText{
+  font-family: 'SF-Pro-Text';
+}
+
+.navbar-nav li{
+  background: #707070;
+}
+.navbar-nav li a{
+  color: white;
+}
+
+.banner{
+  height: 480px;
+}
+.intro .pic{
+  height: 350px;
+  height: 555px;
+}
+
+.intro .longImg{
+  height: 1080px !important;
+}
+
+// 電腦
+@include media-breakpoint-up(lg) {
+  .navbar-nav li{
+    background: white;
+  }
+  .navbar-nav li a{
+    color: #8D8D8D;
+  }
+  .banner{
+    height: 870px; 
+  }
+  .intro .pic{
+    height: 555px;
+    width: 555px;
+  }
+
+  .container{
+    max-width: 1110px !important;
+  }
 }
