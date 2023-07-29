@@ -29,13 +29,24 @@
 }
 .intro .pic{
   height: 350px;
-  height: 555px;
+  width: 345px;
 }
 
 .intro .longImg{
-  height: 1080px !important;
+  height: 680px;
+  width: 345px;
 }
-
+.shoppingItem{
+  height: 350px;
+  object-fit:cover;
+}
+.shoppingItem p{
+  line-height: 350px;
+}
+.bottleImg{
+  height: 520px;
+  width: 345px;
+}
 // 電腦
 @include media-breakpoint-up(lg) {
   .navbar-nav li{
@@ -54,5 +65,19 @@
 
   .container{
     max-width: 1110px !important;
+  }
+  .intro .longImg{
+    height: 1080px;
+    width: 555px;
+  }
+  .shoppingItem{
+    height: 540px;
+    object-fit:cover;
+  }
+  .shoppingItem p{
+    line-height: 540px;
+  }
+  .bottleImg{
+    width: 730px;
   }
 }
