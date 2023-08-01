@@ -7,7 +7,9 @@
 .products .title{
   font-size: 20px;
 }
-
+.object-position-bottom{
+  object-position: bottom;
+}
 // 電腦
 @include media-breakpoint-up(lg) {
   .products img{

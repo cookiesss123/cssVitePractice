@@ -16,7 +16,24 @@
 .SFProText{
   font-family: 'SF-Pro-Text';
 }
-
+.white-outline-btn{
+  border-radius: 30px; 
+  width: 350px; 
+  height: 60px; 
+  border: 2px solid white;
+}
+.object-fit-cover{
+  object-fit: cover;
+}
+.object-position-left{
+  object-position: left;
+}
+.object-position-top{
+  object-position: top;
+}
+.rounded-60{
+  border-radius: 60px;
+}
 .navbar-nav li{
   background: #707070;
 }
@@ -26,6 +43,7 @@
 
 .banner{
   height: 480px;
+  background-image: url('https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center;
 }
 .intro .pic{
   height: 350px;
@@ -36,6 +54,9 @@
   height: 680px;
   width: 345px;
 }
+.shopping{
+  background-color: #E0E0E0;
+}
 .shoppingItem{
   height: 350px;
   object-fit:cover;
@@ -45,7 +66,10 @@
 }
 .bottleImg{
   height: 520px;
-  width: 345px;
+}
+.mask{
+  background-color: rgba(0, 0, 0, .3); 
+  width: calc(100% - 24px);
 }
 // 電腦
 @include media-breakpoint-up(lg) {
@@ -77,7 +101,12 @@
   .shoppingItem p{
     line-height: 540px;
   }
-  .bottleImg{
-    width: 730px;
+  .mask{
+    background-color: rgba(0, 0, 0, .3); 
+    width: calc(100% - 12px);
   }
+
+  // .shopping > div > div{
+  //   display: grid;
+  // }
 }
